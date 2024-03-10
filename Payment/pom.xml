@@ -119,8 +119,6 @@
 
 		<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-api -->
 
-
-		<!-- DEPENDENCIAS AGREGADAS CON LA FE -->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
