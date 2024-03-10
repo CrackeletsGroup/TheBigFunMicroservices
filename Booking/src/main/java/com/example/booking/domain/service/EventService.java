@@ -1,0 +1,29 @@
+package com.example.booking.domain.service;
+
+import com.example.booking.domain.model.Event;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
+
+import java.util.List;
+
+public interface EventService {
+
+    List<Event> getAll();
+
+    Page<Event> getAll(Pageable pageable);
+
+    Event getById(long eventId);
+
+
+    Event create(Event event);
+    Event update(Long eventId, Event event);
+
+    ResponseEntity<?> delete(Long eventId);
+
+    //List<Event> getAllByOrganizerId(Long id);
+    Event addAttendeeToEvent(Long eventId, Long attendeeId);
+
+
+
+}
